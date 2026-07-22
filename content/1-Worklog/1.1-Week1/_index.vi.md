@@ -1,59 +1,31 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-01-01
+date: 2026-07-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Worklog Tuần 1 (04/05/2026 – 10/05/2026)
 
-### Mục tiêu tuần 1:
+#### 1. Mục tiêu công việc
+- Tìm hiểu chương trình First Cloud AI Journey (FCAJ) và kiến thức nền tảng về AWS Cloud.
+- Làm quen với giao diện AWS Management Console và các dịch vụ AWS cơ bản.
+- Cấu hình AWS Budgets để theo dõi và quản lý chi phí sử dụng dịch vụ.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+#### 2. Chi tiết công việc thực hiện trong tuần
+Trong tuần đầu tiên, em được giới thiệu về chương trình đào tạo First Cloud AI Journey (FCAJ) và lộ trình học tập. Đồng thời tìm hiểu các kiến thức nền tảng về Điện toán đám mây (Cloud Computing) cũng như hệ sinh thái dịch vụ của AWS. Bên cạnh đó, em làm quen với giao diện AWS Management Console và nghiên cứu các chức năng cơ bản của những dịch vụ trọng tâm như Amazon EC2, Amazon S3 và AWS Identity and Access Management (IAM). Cuối tuần, em thực hiện cấu hình AWS Budgets nhằm theo dõi chi phí sử dụng dịch vụ và làm quen với công tác quản lý tài nguyên trên nền tảng AWS.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+#### 3. Bảng phân công & Tiến độ chi tiết
 
+| Thứ | Nội dung công việc thực hiện | Trạng thái | Nguồn tài liệu |
+| :---: | :--- | :---: | :--- |
+| **Thứ 2** | Tìm hiểu chương trình FCAJ và kiến thức nền tảng AWS Cloud | Complete | AWS Skill Builder |
+| **Thứ 3** | Làm quen với giao diện AWS Management Console | Complete | AWS Console |
+| **Thứ 4** | Nghiên cứu Amazon EC2, Amazon S3 và AWS IAM | Complete | AWS Documentation |
+| **Thứ 5** | Cấu hình AWS Budgets để theo dõi chi phí | Complete | AWS Budgets |
+| **Thứ 6** | Ôn tập kiến thức và thực hành các bài Lab cơ bản | Complete | AWS Academy Lab |
 
-### Kết quả đạt được tuần 1:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+#### 4. Kết quả đạt được
+- **Hoàn thành**: Tìm hiểu chương trình FCAJ, nắm được kiến thức nền tảng về AWS Cloud, làm quen với AWS Management Console và cấu hình thành công AWS Budgets.
+- **Kỹ năng tích lũy**: Nắm được các khái niệm cơ bản về Cloud Computing, làm quen với hệ sinh thái AWS và biết cách theo dõi chi phí sử dụng dịch vụ thông qua AWS Budgets.

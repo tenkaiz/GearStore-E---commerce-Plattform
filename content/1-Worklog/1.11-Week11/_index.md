@@ -1,57 +1,31 @@
 ---
 title: "Week 11 Worklog"
-date: 2024-01-01
-weight: 2
+date: 2026-07-20
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+# Week 11 Worklog (13/07/2026 – 19/07/2026)
 
-### Week 11 Objectives:
+#### 1. Weekly Objectives
+- Configure the Maven Shade Plugin for optimized packaging.
+- Remove unnecessary dependencies from the deployment package.
+- Generate an optimized `backend-0.0.1-SNAPSHOT.jar` to reduce AWS Lambda Cold Start time.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+#### 2. Technical Activities Summary
+This week focused on optimizing the deployment package for the GearStore backend application. I configured the **maven-shade-plugin** to generate a lightweight executable JAR while excluding unnecessary libraries and duplicate resources. The generated `backend-0.0.1-SNAPSHOT.jar` was analyzed to verify its contents and ensure compatibility with AWS Lambda. In addition, I evaluated the package size and applied optimization techniques to reduce Lambda Cold Start latency and improve deployment efficiency.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+#### 3. Task Breakdown & Schedule
 
+| Day | Task Activity | Status | Reference / Tool |
+| :---: | :--- | :---: | :--- |
+| **Mon** | Configure the Maven Shade Plugin for optimized packaging | Complete | Apache Maven Documentation |
+| **Tue** | Remove unused libraries and duplicate resources | Complete | IntelliJ IDEA |
+| **Wed** | Generate the `backend-0.0.1-SNAPSHOT.jar` package | Complete | Maven |
+| **Thu** | Analyze the JAR file size and verify dependencies | Complete | Project Source Code |
+| **Fri** | Review deployment package and evaluate Cold Start optimization | Complete | AWS Documentation |
 
-### Week 11 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+#### 4. Key Deliverables & Outcomes
+- **Completed Deliverables**: Successfully configured the Maven Shade Plugin, generated the optimized deployment JAR, removed unnecessary dependencies, and verified the deployment package for AWS Lambda.
+- **Skill Acquisition**: Improved knowledge of Maven packaging optimization, dependency management, executable JAR generation, and AWS Lambda Cold Start performance optimization.

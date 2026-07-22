@@ -1,44 +1,161 @@
----
-title: "Events Participated"
-date: 2024-01-01
-weight: 4
-chapter: false
-pre: " <b> 4. </b> "
----
+Summary Report: “Cloud Architect Workshop”
+Event Objectives
+Strengthen participants’ knowledge of Cloud Architecture on Amazon Web Services (AWS).
+Develop analytical thinking and problem-solving skills through AWS Certified Solutions Architect–style scenarios.
+Improve the ability to select appropriate AWS services based on performance, cost, security, and scalability requirements.
+Create opportunities for AWS community members to exchange knowledge and practical experience.
+Prepare participants for AWS certification and future careers in Cloud Computing.
+Event Information
+Event Name: Cloud Architect Workshop
+Date: Saturday, June 20, 2026
+Format: Team Competition (Cloud Architect Challenge)
+Number of Teams: 8
+Team Size: 5 members
+Organizer: AWS First Cloud Journey (FCAJ)
+Event Activities
+The workshop was organized as a team-based competition to create an engaging learning environment while reinforcing AWS architectural knowledge.
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
+Each team answered a series of questions ranging from basic to advanced levels. The questions focused on AWS services and real-world cloud architecture scenarios commonly found in enterprise environments.
 
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
+Teams with higher scores advanced to the next round. In the event of a tie, a final challenge question (Question 11) determined the winner based on both speed and accuracy.
 
-During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
+This competitive format encouraged participants to think critically, collaborate efficiently, and apply theoretical knowledge to practical situations.
 
-### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+Key Highlights
+Hybrid Cloud Architecture
+One of the primary topics was designing Hybrid Cloud solutions.
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+The workshop demonstrated how organizations can integrate on-premises infrastructure with AWS while ensuring:
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+High data availability
+Lower storage costs
+Fast access to frequently used data
+Long-term archival storage for compliance
+AWS services introduced included:
 
-&emsp;**Role:** Attendee  
+AWS Storage Gateway
+AWS File Gateway
+AWS Tape Gateway
+Amazon S3
+Amazon S3 Glacier
+AWS DataSync
+AWS Direct Connect
+Special attention was given to combining AWS Storage Gateway with Amazon S3 Glacier to achieve cost-efficient and high-performance hybrid storage solutions.
 
----
+Infrastructure Design with Amazon EKS
+Another important session focused on deploying containerized applications using Amazon Elastic Kubernetes Service (Amazon EKS).
 
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+Topics included:
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+Kubernetes Metrics
+Kubernetes Cluster Autoscaler
+EC2 Auto Scaling
+Amazon API Gateway
+Amazon CloudWatch
+Container-based Applications
+Through practical scenarios, participants learned how to choose appropriate Auto Scaling strategies to balance system performance and operational costs.
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+AWS Identity and Access Management
+The workshop also covered secure access management across multiple AWS accounts.
 
-&emsp;**Role:** Attendee  
+Important concepts included:
+
+Cross-Account Access
+IAM Policies
+Resource-based Policies
+Identity-based Policies
+AWS Config Rules
+AWS Organizations
+Participants learned how to implement secure permission management while maintaining compliance with organizational security standards.
+
+Scenario-Based Architecture Questions
+One of the most valuable aspects of the workshop was that every question followed the Scenario-Based format used in the AWS Certified Solutions Architect examination.
+
+Each scenario required participants to:
+
+Analyze business requirements
+Identify technical constraints
+Compare multiple AWS services
+Select the most appropriate cloud architecture
+This approach strengthened architectural thinking rather than simple memorization of AWS services.
+
+Key Takeaways
+Technical Knowledge
+After participating in the workshop, I gained a better understanding of:
+
+Hybrid Cloud Architecture
+AWS Storage Gateway
+Amazon S3 and Amazon S3 Glacier
+AWS DataSync
+AWS Direct Connect
+Amazon EKS
+Kubernetes Cluster Autoscaler
+AWS IAM
+AWS Config
+Cross-Account Access
+High Availability
+Cost Optimization
+Architectural Thinking
+The workshop changed the way I approach cloud solution design.
+
+Instead of selecting familiar AWS services, I learned to evaluate solutions based on:
+
+Business requirements
+Deployment cost
+Scalability
+Performance
+Availability
+Security
+This mindset is essential for every Solutions Architect.
+
+Teamwork Skills
+Because the workshop was organized as a competition, team members had to:
+
+Analyze problems together
+Discuss multiple solutions
+Compare architectural options
+Reach decisions under strict time constraints
+These activities significantly improved my communication and teamwork skills.
+
+Applying to Work
+The knowledge gained from this workshop can be applied to many real-world projects.
+
+Examples include:
+
+Designing Hybrid Cloud environments.
+Building storage solutions using Amazon S3 and Amazon Glacier.
+Deploying containerized applications with Amazon EKS.
+Configuring Auto Scaling for enterprise applications.
+Managing secure cross-account AWS environments.
+Designing scalable, secure, and cost-efficient cloud architectures.
+The workshop also provided an excellent foundation for preparing for AWS certification exams.
+
+Event Experience
+Participating in the Cloud Architect Workshop was an exciting and practical learning experience.
+
+Rather than simply listening to lectures, participants actively solved architecture problems through team competitions, which helped improve analytical thinking and decision-making under time pressure.
+
+The most impressive aspect was the use of real business scenarios that required balancing cost, performance, scalability, availability, and security before selecting AWS services.
+
+Sessions covering Hybrid Cloud Architecture, AWS Storage Gateway, Amazon EKS, and IAM provided valuable insights into designing enterprise-grade cloud solutions.
+
+The collaborative atmosphere encouraged team members to exchange ideas, evaluate multiple design options, and defend their architectural decisions.
+Overall, the workshop strengthened both my technical knowledge and teamwork abilities while increasing my confidence in solving real-world cloud architecture challenges.
+
+Lessons Learned
+Cloud architecture is about balancing performance, cost, security, and scalability rather than simply choosing AWS services.
+Hybrid Cloud remains an effective solution for organizations migrating from on-premises infrastructure.
+Understanding the characteristics of AWS services enables better architectural decisions.
+Scenario-Based Questions are one of the most effective ways to develop cloud architecture thinking.
+Collaboration and communication are essential when solving complex technology problems.
+This workshop strengthened my AWS knowledge and motivated me to continue preparing for the AWS Certified Solutions Architect certification.
+Some event photo
+Cloud Architect Workshop
+Hình ảnh tham gia Cloud Architect Workshop.	Hybrid Cloud Architecture Question
+Câu hỏi tình huống về Hybrid Cloud Architecture.
+Amazon EKS Auto Scaling
+Câu hỏi về Amazon EKS và Auto Scaling.	Hybrid Cloud Solution
+Phân tích đáp án cho kiến trúc Hybrid Cloud.
+AWS IAM Cross Account Access
+Câu hỏi về Cross-Account Access và AWS IAM.
+Overall, the Cloud Architect Workshop was an excellent learning experience that strengthened my AWS Cloud knowledge through practical architectural challenges. It improved my cloud solution design skills, teamwork, analytical thinking, and understanding of real-world AWS architecture, providing a solid foundation for future projects and AWS certification.

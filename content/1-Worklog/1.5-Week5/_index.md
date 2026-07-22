@@ -1,57 +1,31 @@
 ---
 title: "Week 5 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-07-20
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+# Week 5 Worklog (01/06/2026 – 07/06/2026)
 
-### Week 5 Objectives:
+#### 1. Weekly Objectives
+- Study AWS Academy Module 4 on Docker and Containers.
+- Learn how to containerize Spring Boot applications using Docker.
+- Build Docker images and push them to Amazon Elastic Container Registry (Amazon ECR).
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+#### 2. Technical Activities Summary
+This week focused on containerization technologies using Docker. I studied the concepts of containers, Docker architecture, and the advantages of containerized applications compared to traditional deployment methods. I practiced creating Dockerfiles for Spring Boot applications, optimized image size by reducing unnecessary layers, and built Docker images successfully. Furthermore, I learned how to authenticate with Amazon Elastic Container Registry (Amazon ECR), create repositories, and push Docker images to the cloud for deployment and management.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+#### 3. Task Breakdown & Schedule
 
+| Day | Task Activity | Status | Reference / Tool |
+| :---: | :--- | :---: | :--- |
+| **Mon** | Study Docker fundamentals and AWS Academy Module 4 | Complete | AWS Academy |
+| **Tue** | Create and optimize Dockerfile for Spring Boot | Complete | Docker Documentation |
+| **Wed** | Build Docker images and test locally | Complete | Docker Desktop |
+| **Thu** | Create Amazon ECR repository and authenticate Docker client | Complete | AWS Console |
+| **Fri** | Push Docker images to Amazon ECR and review deployment workflow | Complete | Amazon ECR |
 
-### Week 5 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+#### 4. Key Deliverables & Outcomes
+- **Completed Deliverables**: Successfully containerized a Spring Boot application, created optimized Docker images, and uploaded them to Amazon ECR.
+- **Skill Acquisition**: Acquired practical experience with Docker, container-based application deployment, Docker image optimization, and Amazon ECR integration.

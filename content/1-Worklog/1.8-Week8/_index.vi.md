@@ -1,59 +1,31 @@
 ---
 title: "Worklog Tuần 8"
-date: 2024-01-01
-weight: 1
+date: 2026-07-20
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Worklog Tuần 8 (22/06/2026 – 28/06/2026)
 
-### Mục tiêu tuần 8:
+#### 1. Mục tiêu công việc
+- Khởi tạo dự án Spring Boot 3 cho hệ thống GearStore.
+- Thiết lập cấu trúc Maven Monorepo và đồng bộ các thư viện phụ thuộc.
+- Phối hợp cùng nhóm xây dựng nền tảng Backend ban đầu.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+#### 2. Chi tiết công việc thực hiện trong tuần
+Trong tuần này, em bắt đầu giai đoạn phát triển dự án **GearStore** bằng việc khởi tạo ứng dụng **Spring Boot 3**. Em thiết lập cấu trúc **Maven Monorepo** nhằm quản lý nhiều module trong cùng một dự án, giúp việc quản lý dependency và mở rộng hệ thống trở nên thuận tiện hơn. Đồng thời, em cấu hình các module cơ bản, đồng bộ các thư viện cần thiết và chuẩn bị môi trường phát triển cho các chức năng tiếp theo. Bên cạnh đó, em phối hợp cùng các thành viên trong nhóm để xây dựng kiến trúc Backend ban đầu, thống nhất quy chuẩn lập trình và phân chia công việc cho từng thành viên.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+#### 3. Bảng phân công & Tiến độ chi tiết
 
+| Thứ | Nội dung công việc thực hiện | Trạng thái | Nguồn tài liệu |
+| :---: | :--- | :---: | :--- |
+| **Thứ 2** | Khởi tạo dự án Spring Boot 3 | Complete | Spring Initializr |
+| **Thứ 3** | Thiết lập cấu trúc Maven Monorepo | Complete | Apache Maven Documentation |
+| **Thứ 4** | Đồng bộ các thư viện phụ thuộc của dự án | Complete | Maven |
+| **Thứ 5** | Phối hợp nhóm xây dựng kiến trúc Backend ban đầu | Complete | Draw.io / GitHub |
+| **Thứ 6** | Rà soát cấu trúc dự án và hoàn thiện môi trường phát triển | Complete | IntelliJ IDEA |
 
-### Kết quả đạt được tuần 8:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+#### 4. Kết quả đạt được
+- **Hoàn thành**: Khởi tạo thành công dự án GearStore bằng Spring Boot 3, xây dựng cấu trúc Maven Monorepo, đồng bộ các thư viện phụ thuộc và hoàn thiện kiến trúc Backend ban đầu.
+- **Kỹ năng tích lũy**: Nâng cao kỹ năng khởi tạo dự án Spring Boot, quản lý dự án theo mô hình Maven Monorepo, quản lý Dependency và phối hợp phát triển Backend theo nhóm.

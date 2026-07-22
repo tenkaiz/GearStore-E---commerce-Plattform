@@ -1,58 +1,31 @@
 ---
 title: "Worklog Tuần 6"
-date: 2024-01-01
-weight: 1
+date: 2026-07-20
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Worklog Tuần 6 (08/06/2026 – 14/06/2026)
 
-### Mục tiêu tuần 6:
+#### 1. Mục tiêu công việc
+- Nghiên cứu AWS Serverless Java Container.
+- Tìm hiểu cơ chế Request/Response Mapping giữa Spring Boot và AWS Lambda.
+- Phân tích quy trình xử lý của ứng dụng Serverless.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+#### 2. Chi tiết công việc thực hiện trong tuần
+Trong tuần này, em tập trung nghiên cứu thư viện **AWS Serverless Java Container**, một thành phần quan trọng giúp tích hợp ứng dụng **Spring Boot** với **AWS Lambda**. Em tìm hiểu cách các yêu cầu HTTP từ **Amazon API Gateway** được chuyển đổi thành **Servlet Request** để Spring Boot có thể xử lý như một ứng dụng web thông thường. Đồng thời, em phân tích cơ chế **Request/Response Mapping**, quá trình khởi tạo **Application Context** của Spring Boot và luồng xử lý yêu cầu từ AWS Lambda đến các Controller của ứng dụng. Bên cạnh đó, em thực hành phân tích kiến trúc và vòng đời hoạt động của ứng dụng Java theo mô hình Serverless.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+#### 3. Bảng phân công & Tiến độ chi tiết
 
+| Thứ | Nội dung công việc thực hiện | Trạng thái | Nguồn tài liệu |
+| :---: | :--- | :---: | :--- |
+| **Thứ 2** | Nghiên cứu kiến trúc AWS Serverless Java Container | Complete | AWS Documentation |
+| **Thứ 3** | Tìm hiểu cơ chế Request/Response Mapping giữa API Gateway và Spring Boot | Complete | AWS Serverless Java Container Documentation |
+| **Thứ 4** | Phân tích quá trình khởi tạo Spring Boot trên AWS Lambda | Complete | Spring Boot Documentation |
+| **Thứ 5** | Nghiên cứu luồng xử lý yêu cầu trong ứng dụng Serverless | Complete | Project Source Code |
+| **Thứ 6** | Ôn tập kiến trúc và hoàn thành các bài thực hành | Complete | AWS Academy Lab |
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+#### 4. Kết quả đạt được
+- **Hoàn thành**: Nắm vững kiến trúc AWS Serverless Java Container, cơ chế Request/Response Mapping và quy trình tích hợp giữa AWS Lambda với Spring Boot.
+- **Kỹ năng tích lũy**: Nâng cao kiến thức về kiến trúc Java Serverless, cơ chế hoạt động của API Gateway, quy trình khởi tạo Spring Boot trên AWS Lambda và luồng xử lý yêu cầu trong ứng dụng Serverless.

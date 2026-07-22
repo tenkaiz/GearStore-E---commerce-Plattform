@@ -1,125 +1,58 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-23
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Bài Thu Hoạch Workshop: "Context Is Everything: Making AI Actually Work for You"
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### 1. Thông Tin Tổng Quan Sự Kiện
+- **Tên chủ đề**: *Context Is Everything: Making AI Actually Work for You* (Ngữ cảnh là tất cả: Làm sao để AI làm việc hiệu quả cho bạn).
+- **Thời gian tổ chức**: Ngày 23/05/2026.
+- **Diễn giả chính**: **Anh Tính Trương** - Platform Engineer tại **GoTymeX** (Đồng tổ chức bởi AWS Vietnam & AWS Study Group).
+- **Đối tượng tham dự**: Hơn 200 sinh viên chuyên ngành Công nghệ Thông tin, Kỹ thuật Phần mềm và Đám mây từ các trường Đại học trên địa bàn TP.HCM (HUTECH, ĐH KHTN, Bách Khoa...).
 
-### Mục Đích Của Sự Kiện
+---
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### 2. Tóm Tắt Nội Dung Chuyên Môn
 
-### Danh Sách Diễn Giả
+#### A. Bản chất của "Context" trong lập trình cùng AI
+- **Nguyên nhân chính khiến AI phản hồi sai/lệch hướng**: Không phải do mô hình AI kém, mà do đầu vào (Prompt) bị **thiếu ngữ cảnh nền tảng**. AI giống như một lập trình viên mới gia nhập dự án — nếu không cung cấp tài liệu kiến trúc, nó sẽ tự suy đoán và dẫn đến hiện tượng "ảo tưởng" (Hallucination).
+- **Công thức ngữ cảnh đầy đủ**:  
+  $$\text{Context} = \text{Goal} + \text{Architecture Situation} + \text{Tech Constraints} + \text{Code Evidence}$$
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+#### B. Áp dụng Bộ khung Context Đơn giản (Simple Context Framework)
+Diễn giả hướng dẫn cấu trúc thông tin 4 lề trước khi gửi yêu cầu cho AI:
+1. **Goal (Mục tiêu)**: Nêu rõ kết quả mong muốn (VD: *Viết REST Controller xử lý upload ảnh sản phẩm lên AWS S3*).
+2. **Relevant Info (Thông tin liên quan)**: Cung cấp đúng đoạn code DTO, DynamoDB Entity hoặc cấu hình `pom.xml`, lọc bỏ thông tin thừa.
+3. **Constraints (Ràng buộc kỹ thuật)**: Quy định chặt chẽ phiên bản (Java 21, Spring Boot 3.3.0), thư viện (`software.amazon.awssdk:s3`), không thêm dependency gây nặng dung lượng file `.jar`.
+4. **Success Criteria (Tiêu chí thành công)**: Kết quả mã nguồn phải đạt chuẩn Clean Code, bắt ngoại lệ `S3Exception` và có log rõ ràng.
 
-### Nội Dung Nổi Bật
+#### C. Định hướng 4 Hướng Dự án AI thực tế cho Sinh viên
+- **AI Code Reviewer**: Phân tích lỗi bảo mật, phát hiện memory leak và đề xuất refactor code backend.
+- **RAG Document Q&A App**: Hỏi đáp thông tin dựa trên file tài liệu PDF giáo trình học tập.
+- **Personal Knowledge Hub**: Hệ thống hóa ghi chú cá nhân và tra cứu nhanh tri thức lập trình.
+- **Automated Test Generator**: Tự động sinh ra các kịch bản Unit Test cho REST API.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+---
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+### 3. Góc Nhìn & Đánh Giá Cá Nhân
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### 💡 Thay đổi tư duy từ "Code Generator" sang "Context Engine"
+- Trải nghiệm thực tế khi làm dự án **GearStore E-Commerce**: Trước khi tham gia sự kiện, em thường yêu cầu AI viết code một cách chung chung, dẫn đến việc mã nguồn sinh ra dùng AWS SDK v1 cũ hoặc dùng phiên bản Java 8 không tương thích với dự án Java 21 / Spring Boot 3 của em.
+- Sau workshop, em nhận ra rằng **kỹ năng quản trị ngữ cảnh (Context Engineering)** chính là năng lực cốt lõi của kỹ sư Cloud tương lai. Việc làm chủ kiến trúc nền tảng (Spring Boot, DynamoDB, S3) mới giúp mình làm chủ được AI, tránh phụ thuộc thụ động.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+---
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+### 4. Trải Nghiệm Thực Tế & Cảm Nhận Sự Kiện
 
-#### Domain-Driven Design (DDD)
+- **Bầu không khí sự kiện**: Buổi workshop diễn ra vô cùng sôi nổi và hào hứng tại văn phòng AWS Vietnam. Không gian hiện đại, chuyên nghiệp cùng sự đón tiếp nhiệt tình từ Ban tổ chức FCAJ.
+- **Kết quả thu hoạch**: Chuyến đi không chỉ mang lại kiến thức công nghệ mới mà còn giúp em mở rộng mạng lưới kết nối với các bạn sinh viên cùng đam mê Cloud & AI, đồng thời nhận được phần quà kỷ niệm ý nghĩa từ AWS Vietnam.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+---
 
-#### Event-Driven Architecture
+#### Hình ảnh tham gia sự kiện
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+![Sinh viên Vũ Hoàng Gia Huy tham dự sự kiện AWS]

@@ -1,59 +1,31 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+date: 2026-07-20
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Worklog Tuần 5 (01/06/2026 – 07/06/2026)
 
-### Mục tiêu tuần 5:
+#### 1. Mục tiêu công việc
+- Nghiên cứu Module 4 về Docker và Container.
+- Thực hành đóng gói ứng dụng Spring Boot bằng Docker.
+- Viết Dockerfile tối ưu và đẩy Docker Image lên Amazon Elastic Container Registry (Amazon ECR).
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+#### 2. Chi tiết công việc thực hiện trong tuần
+Trong tuần này, em tập trung nghiên cứu công nghệ **Docker** và mô hình triển khai ứng dụng bằng **Container**. Em tìm hiểu kiến trúc Docker, sự khác biệt giữa Container và Virtual Machine cũng như những lợi ích của việc đóng gói ứng dụng bằng Container. Sau đó, em thực hành xây dựng **Dockerfile** cho ứng dụng Spring Boot, tối ưu cấu trúc Docker Image nhằm giảm kích thước và tăng tốc độ triển khai. Bên cạnh đó, em tìm hiểu dịch vụ **Amazon Elastic Container Registry (Amazon ECR)**, thực hiện tạo Repository, xác thực Docker Client và đẩy Docker Image lên AWS để phục vụ quá trình triển khai sau này.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+#### 3. Bảng phân công & Tiến độ chi tiết
 
+| Thứ | Nội dung công việc thực hiện | Trạng thái | Nguồn tài liệu |
+| :---: | :--- | :---: | :--- |
+| **Thứ 2** | Nghiên cứu Docker và Module 4 của AWS Academy | Complete | AWS Academy |
+| **Thứ 3** | Xây dựng và tối ưu Dockerfile cho ứng dụng Spring Boot | Complete | Docker Documentation |
+| **Thứ 4** | Build Docker Image và kiểm thử trên môi trường cục bộ | Complete | Docker Desktop |
+| **Thứ 5** | Tạo Amazon ECR Repository và cấu hình xác thực Docker | Complete | AWS Console |
+| **Thứ 6** | Đẩy Docker Image lên Amazon ECR và rà soát quy trình triển khai | Complete | Amazon ECR |
 
-### Kết quả đạt được tuần 5:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+#### 4. Kết quả đạt được
+- **Hoàn thành**: Hoàn thành nghiên cứu Module 4, xây dựng Dockerfile cho ứng dụng Spring Boot, tạo Docker Image và đẩy thành công lên Amazon ECR.
+- **Kỹ năng tích lũy**: Nâng cao kỹ năng sử dụng Docker, triển khai ứng dụng bằng Container, tối ưu Docker Image và tích hợp Amazon ECR trong quy trình triển khai ứng dụng trên nền tảng AWS.

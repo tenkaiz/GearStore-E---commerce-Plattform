@@ -1,126 +1,58 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-23
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# Summary Report: "Context Is Everything: Making AI Actually Work for You"
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+### 1. General Event Overview
+- **Topic Title**: *Context Is Everything: Making AI Actually Work for You*.
+- **Date**: May 23, 2026.
+- **Keynote Speaker**: **Mr. Tinh Truong** - Platform Engineer at **GoTymeX** (Co-organized by AWS Vietnam & AWS Study Group).
+- **Attendees**: Over 200 IT, Software Engineering, and Cloud students from universities across Ho Chi Minh City (HUTECH, VNU-HCM US, HCMUT, etc.).
 
-### Event Objectives
+---
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+### 2. Summary of Technical Content
 
-### Speakers
+#### A. The Essence of "Context" in AI-Assisted Engineering
+- **Root Cause of AI Inefficiencies**: Inaccurate AI responses stem primarily from **insufficient input context** rather than model flaws. AI behaves like a junior developer newly onboarded into a project — without system architecture documentation, it makes wrong assumptions leading to "Hallucinations".
+- **Complete Context Equation**:  
+  $$\text{Context} = \text{Goal} + \text{Architecture Situation} + \text{Tech Constraints} + \text{Code Evidence}$$
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+#### B. The Simple Context Framework
+The speaker introduced a structured 4-pillar input framework prior to querying AI:
+1. **Goal**: Explicitly define the desired deliverable (e.g., *Write a REST Controller handling product image uploads to AWS S3*).
+2. **Relevant Info**: Supply concise DTOs, DynamoDB Entity schemas, or `pom.xml` dependencies while stripping unnecessary noise.
+3. **Constraints**: Enforce strict technology stacks (Java 21, Spring Boot 3.3.0), libraries (`software.amazon.awssdk:s3`), and prevent bloated external dependencies.
+4. **Success Criteria**: Define code standards (Clean Code, `S3Exception` handling, structured logging).
 
-### Key Highlights
+#### C. 4 Practical AI Project Directions for Students
+- **AI Code Reviewer**: Analyzes vulnerability patterns, memory leaks, and backend refactoring opportunities.
+- **RAG Document Q&A App**: Intelligent Q&A retrieving insights from academic PDF lecture slides.
+- **Personal Knowledge Hub**: Systematizes personal engineering notes for rapid contextual lookup.
+- **Automated Test Generator**: Automatically generates Unit Test suites for REST API endpoints.
 
-#### Identifying the drawbacks of legacy application architecture
+---
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+### 3. Personal Insights & Reflections
 
-#### Transitioning to modern application architecture – Microservices
+#### 💡 Shifting Mindset from "Code Generator" to "Context Engine"
+- Reflection on **GearStore E-Commerce**: Prior to this workshop, I used generic prompts when coding, causing AI to generate outdated AWS SDK v1 code incompatible with my Java 21 / Spring Boot 3 stack.
+- Post-workshop realization: **Context Engineering** is the core capability of future Cloud Engineers. Mastering underlying architecture (Spring Boot, DynamoDB, S3) ensures engineers lead AI rather than passively depending on it.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+---
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+### 4. Practical Experience & Personal Impressions
 
-#### Domain-Driven Design (DDD)
+- **Event Atmosphere**: The workshop was vibrant and engaging at the AWS Vietnam office. The modern setup and warm hospitality from the FCAJ team created an inspiring environment.
+- **Key Outcomes**: The event provided cutting-edge technology perspectives, enabled networking with fellow cloud enthusiasts, and offered memorable souvenirs from AWS Vietnam.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+---
 
-#### Event-Driven Architecture
+#### Event Photo
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
-
-### Key Takeaways
-
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+![Student Vũ Hoàng Gia Huy attending AWS event]

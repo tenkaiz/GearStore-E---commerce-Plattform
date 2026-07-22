@@ -1,59 +1,31 @@
 ---
 title: "Worklog Tuần 2"
-date: 2024-01-01
-weight: 1
+date: 2026-07-20
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+# Worklog Tuần 2 (11/05/2026 – 17/05/2026)
 
-### Mục tiêu tuần 2:
+#### 1. Mục tiêu công việc
+- Nghiên cứu nội dung Module 1 và Module 2 của AWS Academy.
+- Tìm hiểu dịch vụ AWS Identity and Access Management (IAM).
+- Nắm được cơ chế IAM Policy, IAM Role và quản lý quyền truy cập.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+#### 2. Chi tiết công việc thực hiện trong tuần
+Trong tuần này, em tập trung nghiên cứu dịch vụ AWS Identity and Access Management (IAM) – một trong những dịch vụ bảo mật quan trọng của AWS. Em tìm hiểu cơ chế xác thực và phân quyền người dùng thông qua IAM User, Group, Role và Policy, đồng thời nghiên cứu nguyên tắc **Least Privilege** nhằm cấp quyền tối thiểu cần thiết cho từng đối tượng sử dụng. Bên cạnh đó, em tìm hiểu cấu trúc của IAM Policy với các thành phần như **Allow**, **Deny**, **Action** và **Resource ARN**, đồng thời thực hành cấu hình quyền truy cập và gán IAM Role cho các dịch vụ AWS.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+#### 3. Bảng phân công & Tiến độ chi tiết
 
+| Thứ | Nội dung công việc thực hiện | Trạng thái | Nguồn tài liệu |
+| :---: | :--- | :---: | :--- |
+| **Thứ 2** | Nghiên cứu AWS Academy Module 1 và Module 2 | Complete | AWS Academy |
+| **Thứ 3** | Tìm hiểu IAM User, Group và IAM Role | Complete | AWS Documentation |
+| **Thứ 4** | Nghiên cứu IAM Policy, Resource ARN, Allow và Deny | Complete | AWS IAM Documentation |
+| **Thứ 5** | Thực hành cấu hình IAM Policy và phân quyền truy cập | Complete | AWS Console |
+| **Thứ 6** | Ôn tập kiến thức và hoàn thành các bài Lab về IAM | Complete | AWS Academy Lab |
 
-### Kết quả đạt được tuần 2:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+#### 4. Kết quả đạt được
+- **Hoàn thành**: Hoàn thành nội dung Module 1 và Module 2, nắm được cơ chế hoạt động của AWS IAM, IAM Policy, IAM Role và thực hành cấu hình quyền truy cập trên AWS.
+- **Kỹ năng tích lũy**: Nâng cao kiến thức về bảo mật trên AWS, quản lý quyền truy cập theo vai trò (Role-Based Access Control), hiểu và áp dụng nguyên tắc **Least Privilege** trong việc phân quyền tài nguyên.
