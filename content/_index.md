@@ -19,11 +19,11 @@ chapter: false
 
 &emsp; **Email:** huykhang0210@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** HCMC University of Technology (HUTECH)
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** 22DTHJA4
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
