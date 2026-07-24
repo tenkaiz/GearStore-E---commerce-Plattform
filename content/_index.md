@@ -13,7 +13,7 @@ chapter: false
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Vu Hoang Gia Huy
 
 &emsp; **Phone Number:** 0779655204 
 

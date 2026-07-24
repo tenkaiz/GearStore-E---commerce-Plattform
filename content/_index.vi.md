@@ -7,7 +7,7 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+&emsp; **Họ và tên:** Vũ Hoàng Gia Huy
 
 &emsp; **Số điện thoại:** 0779655204
 
