@@ -15,9 +15,9 @@ chapter: false
 ### Student Information:
 &emsp; **Full Name:** Nguyen Van A
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0779655204 
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** huykhang0210@gmail.com
 
 &emsp; **University:** Ho Chi Minh City University of Technology and Education
 

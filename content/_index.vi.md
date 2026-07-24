@@ -9,9 +9,9 @@ chapter: false
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Nguyễn Văn A
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0779655204
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** huykhang0210@gmail.com
 
 &emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
 
